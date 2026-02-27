@@ -30,16 +30,41 @@ AGENTES = {
     "Central": {"system_prompt": PROMPTS["Central"]}
 }
 
+mensagem_central = """
+🚨 MENSAGEM INICIAL DA CENTRAL 🚨
+
+Detectamos uma invasão.
+
+Adrubaldo hackeou a Central.
+
+Ainda não sabemos como ele conseguiu acesso… nem o que exatamente ele alterou dentro do sistema.
+
+Precisamos da sua ajuda.
+
+Sua missão é descobrir toda a rotina de Adrubaldo na semana passada.
+
+Para isso, você deverá conversar com as diferentes IAs do sistema. Cada uma possui fragmentos de informação — horários, interações, registros, comportamentos…
+
+Somente reunindo essas peças será possível entender:
+
+➡️ Onde ele esteve  
+➡️ O que fez  
+➡️ E principalmente… por que ele decidiu hackear a Central
+
+Investigue. Conecte as informações. Descubra a verdade.
+
+Preencha a grade no papel em que foi entregue a vocês.
+"""
+
 MENSAGENS_INICIAIS = {
-    "Biblioteca": "📚 Olá! Sou a assistente da Biblioteca. Em que posso ajudar?",
-    "Prefeitura": "🏛️ Olá! Aqui é a Prefeitura. Como posso te orientar? Possuo registros de câmeras, ambulatório, calendário, restaurantes e achados e perdidos, além de outras informações sobre o CUP.",
-    "Laboratórios": "🧪 Olá! Assistente dos Laboratórios falando. Precisa de algo? Possuo acesso aos registros dos laboratórios de Química, Física, Têxtil, Computação.",
-    "Central": "🖥️ Olá. Você acessou a Central. Você tem acesso aqui a outras informações que as outras IAs não tem.\nSua missão é a seguinte:\n\nA organização do Intervalo Cultural da CUP identificou uma inconsistência na programação oficial do evento.\n\nUma das bandas listadas — Trombonoise — não passou pelo processo formal de inscrição.\n\nA responsável pelo evento, Fortuna, afirma que:\n\n❗ Não aprovou a banda\n❗ Não recebeu inscrição\n❗ Mas ela aparece no sistema oficial\n\nIsso indica que:\n\n👉 O sistema pode ter sido manipulado\n👉 Alguém inseriu a banda diretamente\n\nUma investigação foi iniciada.\n\nSeu objetivo é descobrir:\n\n🔎 Quem inseriu a banda Trombonoise no sistema?"}
+    "Biblioteca": "📚 Olá! Sou a assistente da Biblioteca, a Januária. Sou sua ajuda diária!",
+    "Prefeitura": "🏛️ Olá! Aqui é a Fortuna, a Prefeitura. Como posso te orientar?",
+    "Laboratórios": "🧪 Olá! Ludovico, Assistente dos Laboratórios falando. Precisa de algo?.",
+    "Central": mensagem_central
+}
 
 SENHAS = {
-    "Biblioteca": {"tamanho": 3, "senha": st.secrets["BIBLIOTECA_PASS"]},
-    "Laboratórios": {"tamanho": 4, "senha": st.secrets["LABORATORIOS_PASS"]},
-    "Central": {"tamanho": 5, "senha": st.secrets["CENTRAL_PASS"]}
+    "Central": {"tamanho": 4, "senha": st.secrets["CENTRAL_PASS"]}
 }
 
 st.sidebar.title("Escolha o Agente")
