@@ -35,13 +35,13 @@ mensagem_central = """
 
 Detectamos uma invasão.
 
-Adrubaldo hackeou a Central.
+Asdrúbal hackeou a Central.
 
 Ainda não sabemos como ele conseguiu acesso… nem o que exatamente ele alterou dentro do sistema.
 
 Precisamos da sua ajuda.
 
-Sua missão é descobrir toda a rotina de Adrubaldo na semana passada.
+Sua missão é descobrir toda a rotina de Asdrúbal na semana passada.
 
 Para isso, você deverá conversar com as diferentes IAs do sistema. Cada uma possui fragmentos de informação — horários, interações, registros, comportamentos…
 
