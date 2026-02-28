@@ -29,6 +29,7 @@ Prefeitura — TAGS possíveis:
 Central — TAGS possíveis:
 [Câmeras]
 [Salas de aula]
+[Horários de aula]
 
 Você entende que se falar com as IAs:
 As perguntas podem vir com TAGS.
@@ -54,11 +55,11 @@ Asdrúbal foi visto na terça 15h lendo o mural de eventos.
 [Câmeras]
 Asdrúbal esteve em reunião na quarta 15h na Sala 512, e saiu com um semblante frustrado.
 
+[Câmeras]
+Asdrúbal frequenta a Casinha de Psicologia nas horas vagas pela manhã.
+
 [Horários de aula]
 Asdrúbal frequentou a Sala 203 – Psicanálise.
-
-[Vila Universitária]
-Asdrúbal frequenta a Casinha de Psicologia nas horas vagas pela manhã.
 
 [Horários de aula]
 Psicanálise - Segunda e Quarta (10h - 12h)
