@@ -4,16 +4,16 @@ import google.generativeai as genai
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 model = genai.GenerativeModel("gemini-2.5-flash")
 
-with open("prompts/BIBLIOTECA.txt", "r", encoding="utf-8") as f:
+with open("prompts/a_BIBLIOTECA.txt", "r", encoding="utf-8") as f:
     prompt_biblioteca = f.read()
 
-with open("prompts/PREFEITURA.txt", "r", encoding="utf-8") as f:
+with open("prompts/a_PREFEITURA.txt", "r", encoding="utf-8") as f:
     prompt_prefeitura = f.read()
 
-with open("prompts/LABORATORIOS.txt", "r", encoding="utf-8") as f:
+with open("prompts/a_LABORATORIOS.txt", "r", encoding="utf-8") as f:
     prompt_laboratorios = f.read()
 
-with open("prompts/CENTRAL.txt", "r", encoding="utf-8") as f:
+with open("prompts/a_CENTRAL.txt", "r", encoding="utf-8") as f:
     prompt_central = f.read()
 
 PROMPTS = {
@@ -31,25 +31,21 @@ AGENTES = {
 }
 
 mensagem_central = """
-🚨 MENSAGEM INICIAL DA CENTRAL 🚨
+Obrigado por me desbloquear.
 
-Detectamos uma invasão.
-
-Asdrúbal hackeou a Central.
-
-Ainda não sabemos como ele conseguiu acesso… nem o que exatamente ele alterou dentro do sistema.
+Detectamos uma invasão, descobrimos que o responsável se chama Asdrúbal.
 
 Precisamos da sua ajuda.
 
 Sua missão é descobrir toda a rotina de Asdrúbal na semana passada.
 
-Para isso, você deverá conversar com as diferentes IAs do sistema. Cada uma possui fragmentos de informação — horários, interações, registros, comportamentos…
+Para isso, você deverá conversar com as diferentes IAs do sistema. Cada uma possui fragmentos de informação.
 
 Somente reunindo essas peças será possível entender:
 
-➡️ Onde ele esteve  
-➡️ O que fez  
-➡️ E principalmente… por que ele decidiu hackear a Central
+➡️ Onde ele esteve?
+➡️ O que fez? 
+➡️ E principalmente… por que ele decidiu me hackear.
 
 Investigue. Conecte as informações. Descubra a verdade.
 
@@ -59,7 +55,7 @@ Preencha a grade no papel em que foi entregue a vocês.
 MENSAGENS_INICIAIS = {
     "Biblioteca": "📚 Olá! Sou a assistente da Biblioteca, a Januária. Sou sua ajuda diária!",
     "Prefeitura": "🏛️ Olá! Aqui é a Fortuna, a Prefeitura. Como posso te orientar?",
-    "Laboratórios": "🧪 Olá! Ludovico, Assistente dos Laboratórios falando. Precisa de algo?.",
+    "Laboratórios": "🧪 Olá! Ludovico, Assistente das Oficinas e Laboratórios falando. Precisa de algo?.",
     "Central": mensagem_central
 }
 
