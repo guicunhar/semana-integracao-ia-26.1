@@ -1,8 +1,7 @@
 import streamlit as st
-import google.generativeai as genai
+from openai import OpenAI
 
-genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
-model = genai.GenerativeModel("gemini-2.5-flash")
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 with open("prompts/a_BIBLIOTECA.txt", "r", encoding="utf-8") as f:
     prompt_biblioteca = f.read()
@@ -50,6 +49,8 @@ Somente reunindo essas peças será possível entender:
 Investigue. Conecte as informações. Descubra a verdade.
 
 Preencha a grade no papel em que foi entregue a vocês.
+
+Ah, eu sei muito bem como lidar melhor com as outras IAs. Então, se precisar de algo, é só me pedir.
 """
 
 MENSAGENS_INICIAIS = {
@@ -123,13 +124,12 @@ if "memoria" not in st.session_state:
     st.session_state.memoria = {}
 
 if agente_escolhido not in st.session_state.memoria:
-    if agente_escolhido not in st.session_state.memoria:
-        st.session_state.memoria[agente_escolhido] = [
-            {
-                "role": "assistant",
-                "content": MENSAGENS_INICIAIS.get(agente_escolhido, "Olá! Como posso ajudar?")
-            }
-        ]
+    st.session_state.memoria[agente_escolhido] = [
+        {
+            "role": "assistant",
+            "content": MENSAGENS_INICIAIS.get(agente_escolhido, "Olá! Como posso ajudar?")
+        }
+    ]
 
 memoria = st.session_state.memoria[agente_escolhido]
 
@@ -151,30 +151,30 @@ if user_input:
     memoria = memoria[-MAX_MEMORIA:]
     st.session_state.memoria[agente_escolhido] = memoria
 
-    contexto = system_prompt + "\n\n"
+    messages = [
+        {
+            "role": "system",
+            "content": system_prompt,
+            "cache_control": {"type": "ephemeral"}
+        }
+    ]
 
     for m in memoria:
         if not m["content"]:
             continue
-        if m["role"] == "user":
-            contexto += f"Usuário: {m['content']}\n"
-        else:
-            contexto += f"Assistente: {m['content']}\n"
+        messages.append({
+            "role": m["role"],
+            "content": m["content"]
+        })
 
-    response = model.generate_content(contexto)
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=messages
+    )
 
-    try:
-        resposta = response.text
-    except:
-        if response.candidates and response.candidates[0].content.parts:
-            resposta = response.candidates[0].content.parts[0].text
-        else:
-            resposta = None
+    resposta = response.choices[0].message.content
 
-    if resposta:
-        memoria.append({"role": "assistant", "content": resposta})
-    else:
-        resposta = "⚠️ O agente não conseguiu responder."
+    memoria.append({"role": "assistant", "content": resposta})
 
     with st.chat_message("assistant"):
         st.write(resposta)

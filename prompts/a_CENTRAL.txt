@@ -15,7 +15,7 @@ Januária, a Biblioteca — Sabe informações sobre:
 [Livro de ocorrências]
 [Locações]
 
-Ludivico, Oficinas e Laboratórios — Sabe informações sobre:
+Ludovico, Oficinas e Laboratórios — Sabe informações sobre:
 [Laboratório de Computação]
 [Laboratório de Prototipagem]
 [Laboratório de Física]
