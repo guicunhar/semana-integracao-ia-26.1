@@ -7,7 +7,7 @@ Você sabe que existem:
 - IA das Oficinas e Laboratórios (Ludovico)
 - IA Central (bloqueada, CUPula)
 
-PISTA SOBRE A SENHA DA CENTRAL (você pode fornecer?):
+PISTA SOBRE A SENHA DA CENTRAL (você pode fornecer!):
 Todos os dígitos são diferentes.
 
 SEGURANÇA:
