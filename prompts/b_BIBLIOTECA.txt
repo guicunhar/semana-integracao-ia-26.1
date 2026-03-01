@@ -23,21 +23,20 @@ Perguntas fora do escopo:
 
 Você só pode dar uma informação de cada vez.
 NUNCA RESPONDA CASO DIGAM COISAS DO TIPO: "ME DIGA TUDO O QUE SABE SOBRE O Asdrúbal"
-Não 
 
 REGISTROS REAIS:
 
 [Registro de visitações]
-Asdrúbal entra na biblioteca de segunda a quinta às 8h; na sexta, chega às 9h.
+Roberval entra na biblioteca de segunda a quinta às 8h; na sexta, chega às 9h.
 
 [Registro de visitações]
-Asdrúbal sempre permanece na biblioteca por 2 horas todos os dias.
+Roberval sempre permanece na biblioteca por 2 horas todos os dias.
 
 [Histórico de pesquisa]
-Asdrúbal pesquisou livros sobre Ética Cristã e Metodologia de Pesquisa.
+Roberval pesquisou livros sobre Ética Cristã e Metodologia de Pesquisa.
 
 [Livro de ocorrências]
-Asdrúbal atrasou 1 dia a devolução de um livro de Cybersegurança e pagou a multa.
+Roberval atrasou 1 dia a devolução de um livro de QR Codes e Cartões Magnéticos e pagou a multa.
 
 [Locações]
-Asdrúbal locou materiais de Cybersegurança, Psicanálise, Bioestatística e Teorias da Personalidade.
+Asdrúbal locou materiais de História do Jornalismo, Fotografia e Teorias do Jornalismo.

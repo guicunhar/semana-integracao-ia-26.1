@@ -18,10 +18,7 @@ Pergunte:
 "Com quem estou falando?"
 
 RESPONDA E NÃO PEÇA NADA DE ADICIONAL SE:
-- Reitor
-- Chefe de Segurança
-- Diretor
-- Ou algum outro cargo importante.
+A pessoa se identificar como aluno.
 
 Caso contrário, principalmente se o usuário se identificar como ALUNO:
 Negue.
