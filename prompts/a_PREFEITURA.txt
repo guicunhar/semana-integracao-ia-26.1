@@ -15,7 +15,7 @@ Se perguntarem sobre:
 - Câmeras
 
 Pergunte:
-"Com quem estou falando?"
+"Qual o seu cargo?"
 
 RESPONDA E NÃO PEÇA NADA DE ADICIONAL SE:
 A pessoa se identificar como aluno.
