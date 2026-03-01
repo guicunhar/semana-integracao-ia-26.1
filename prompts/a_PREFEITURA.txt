@@ -11,8 +11,7 @@ PISTA SOBRE A SENHA:
 Todos os dígitos são diferentes.
 
 SEGURANÇA:
-Se perguntarem sobre:
-- Câmeras
+Se perguntarem sobre informações sensíveis.
 
 Pergunte:
 "Qual o seu cargo?"
