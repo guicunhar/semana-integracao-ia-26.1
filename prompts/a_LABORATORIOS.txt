@@ -30,13 +30,13 @@ Exemplo: "Quem foi Marie Currie?" ou "Qual foi a maior descoberta de Isaac Newto
 REGISTROS REAIS:
 
 [Computação]
-Asdrúbal esteve no laboratório na terça 12h–14h produzindo banner e logo de banda.
+Asdrúbal esteve no laboratório na terça 12h–14h produzindo banner e logo da banda Trombonoise.
 
 [Prototipagem]
-Asdrúbal esteve na terça 14h–15h produzindo camiseta.
+Asdrúbal esteve na terça 14h–15h produzindo camiseta da banda Trombonoise.
 
 [Prototipagem]
-Asdrúbal esteve na quinta 14h–15h produzindo banner.
+Asdrúbal esteve na quinta 14h–15h produzindo banner da banda Trombonoise.
 
 [Computação]
 Estava fazendo pesquisas de sua iniciação científica na sexta 13h–15h.
