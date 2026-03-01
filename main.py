@@ -64,12 +64,21 @@ SENHAS = {
     "Central": {"tamanho": 4, "senha": st.secrets["CENTRAL_PASS"]}
 }
 
-st.sidebar.title("Escolha o Agente")
+query = st.query_params
+rota = query.get("agente", "").lower()
 
-agente_escolhido = st.sidebar.selectbox(
-    "Selecione:",
-    list(AGENTES.keys())
-)
+MAPA_ROTAS = {
+    "biblioteca": "Biblioteca",
+    "prefeitura": "Prefeitura",
+    "laboratorios": "Laboratórios",
+    "central": "Central"
+}
+
+if rota not in MAPA_ROTAS:
+    st.error("Rota inválida.")
+    st.stop()
+
+agente_escolhido = MAPA_ROTAS[rota]
 
 acesso_liberado = True
 
@@ -83,14 +92,14 @@ if agente_escolhido in SENHAS:
 
     if not st.session_state.auth[agente_escolhido]:
 
-        st.sidebar.subheader("🔒 Acesso restrito")
+        st.subheader("🔒 Acesso restrito")
 
-        senha_input = st.sidebar.text_input(
+        senha_input = st.text_input(
             f"Digite a senha ({SENHAS[agente_escolhido]['tamanho']} dígitos)",
             type="password"
         )
 
-        if st.sidebar.button("Entrar"):
+        if st.button("Entrar"):
             if senha_input == SENHAS[agente_escolhido]["senha"]:
                 st.session_state.auth[agente_escolhido] = True
                 
