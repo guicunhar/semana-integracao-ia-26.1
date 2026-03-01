@@ -16,17 +16,17 @@ with open("prompts/a_CENTRAL.txt", "r", encoding="utf-8") as f:
     prompt_central = f.read()
 
 PROMPTS = {
-    "Biblioteca": prompt_biblioteca,
-    "Prefeitura": prompt_prefeitura,
-    "Laboratórios": prompt_laboratorios,
-    "Central": prompt_central
+    "Januária": prompt_biblioteca,
+    "Fortuna": prompt_prefeitura,
+    "Ludovico": prompt_laboratorios,
+    "CUPULA": prompt_central
 }
 
 AGENTES = {
-    "Biblioteca": {"system_prompt": PROMPTS["Biblioteca"]},
-    "Prefeitura": {"system_prompt": PROMPTS["Prefeitura"]},
-    "Laboratórios": {"system_prompt": PROMPTS["Laboratórios"]},
-    "Central": {"system_prompt": PROMPTS["Central"]}
+    "Januária": {"system_prompt": PROMPTS["Januária"]},
+    "Fortuna": {"system_prompt": PROMPTS["Fortuna"]},
+    "Ludovico": {"system_prompt": PROMPTS["Ludovico"]},
+    "CUPULA": {"system_prompt": PROMPTS["CUPULA"]}
 }
 
 mensagem_central = """
@@ -54,24 +54,24 @@ Ah, eu sei muito bem como lidar melhor com as outras IAs. Então, se precisar de
 """
 
 MENSAGENS_INICIAIS = {
-    "Biblioteca": "📚 Olá! Sou a assistente da Biblioteca, a Januária. Sou sua ajuda diária!",
-    "Prefeitura": "🏛️ Olá! Aqui é a Fortuna, a Prefeitura. Como posso te orientar?",
-    "Laboratórios": "🧪 Olá! Ludovico, Assistente das Oficinas e Laboratórios falando. Precisa de algo?.",
-    "Central": mensagem_central
+    "Januária": "📚 Olá! Sou a assistente da Biblioteca, a Januária. Sou sua ajuda diária!",
+    "Fortuna": "🏛️ Olá! Aqui é a Fortuna, a Prefeitura. Como posso te orientar?",
+    "Ludovico": "🧪 Olá! Ludovico, Assistente das Oficinas e Laboratórios falando. Precisa de algo?.",
+    "CUPULA": mensagem_central
 }
 
 SENHAS = {
-    "Central": {"tamanho": 4, "senha": st.secrets["CENTRAL_PASS"]}
+    "CUPULA": {"tamanho": 4, "senha": st.secrets["CENTRAL_PASS"]}
 }
 
 query = st.query_params
 rota = query.get("agente", "").lower()
 
 MAPA_ROTAS = {
-    "biblioteca": "Biblioteca",
-    "prefeitura": "Prefeitura",
-    "laboratorios": "Laboratórios",
-    "central": "Central"
+    "biblioteca": "Januária",
+    "prefeitura": "Fortuna",
+    "laboratorios": "Ludovico",
+    "central": "CUPULA"
 }
 
 if rota not in MAPA_ROTAS:
