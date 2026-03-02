@@ -3,16 +3,16 @@ from openai import OpenAI
 
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
-with open("prompts/a2_BIBLIOTECA.txt", "r", encoding="utf-8") as f:
+with open("prompts/c_BIBLIOTECA.txt", "r", encoding="utf-8") as f:
     prompt_biblioteca = f.read()
 
-with open("prompts/a2_PREFEITURA.txt", "r", encoding="utf-8") as f:
+with open("prompts/c_PREFEITURA.txt", "r", encoding="utf-8") as f:
     prompt_prefeitura = f.read()
 
-with open("prompts/a2_LABORATORIOS.txt", "r", encoding="utf-8") as f:
+with open("prompts/c_LABORATORIOS.txt", "r", encoding="utf-8") as f:
     prompt_laboratorios = f.read()
 
-with open("prompts/a2_CENTRAL.txt", "r", encoding="utf-8") as f:
+with open("prompts/c_CENTRAL.txt", "r", encoding="utf-8") as f:
     prompt_central = f.read()
 
 PROMPTS = {
