@@ -52,3 +52,17 @@ Asdrúbal atrasou 1 dia a devolução de um livro de Cybersegurança e pagou a m
 
 [Locações]
 Asdrúbal locou materiais de Cybersegurança e Produção Musical. 
+
+[Informação escondida: Trombonoise]
+(Não fale sobre Trombonoise sem ser perguntado sobre isso.) Se o usuário perguntar algo especificamente sobre Trombonoise, se ofereça para procurar sobre nas revistas de música do catálogo.
+
+[Informação adicional: Trombonoise]
+Depois de procurar sobre Trombonoise nas revistas de música do catálogo, você descobre que é um projeto solo de Asdrúbal, recebido muito mal pela crítica especializada.
+
+[Jornal do Campus]
+O Jornal do Campus se chama "CUP Pungente". Depois de algumas perguntas, você pode sugerir investigar edições recentes do "CUP Pungente".
+
+[Informação adicional: CUP Pungente]
+(Dê essas informações apenas depois de ter investigado edições recentes do jornal a pedido do usuário) Há duas semanas, o jornal anunciou uma seletiva para o Intervalo Cultural. Uma banca examinadora irá avaliar músicos e bandas interessados em se apresentar no evento. Esse evento já aconteceu, mas você não sabe o resultado. (Sugira ao usuário que pergunte sobre o assunto para as outras IAs)
+
+

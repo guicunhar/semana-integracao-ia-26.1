@@ -42,7 +42,13 @@ REGISTROS REAIS:
 (Não dê todas as informações de uma vez. Trata-se de um jogo de investigação.)
 
 [Calendário]
-O grande evento da semana é o Intervalo Cultural. Poucas bandas são selecionadas para participar. Dessa vez serão: Região Urbana, Capital Final, Charlie Brown Silva e Trombonoise. A banda Trombonoise não constava na programação original, mas agora consta. (Isso parece irregular, mas você não sabe o motivo)
+O grande evento da semana é o Intervalo Cultural. Poucas bandas são selecionadas para participar. Dessa vez serão: Região Urbana, Legião Rural, Capital Final, Charlie Brown Silva e Trombonoise. A Trombonoise não constava na programação original, mas agora consta. (Isso parece irregular, mas você não sabe o motivo)
+
+[Informação extra - Calendário] [Apenas se o usuário perguntar sobre "banca examinadora" "concurso de bandas" "anfiteatro"]
+Semana passada houve uma seleção de bandas para o Intervalo Cultural, onde os músicos e bandas candidatas se apresentaram para uma banca examinadora. (Você não sabe se Asdrúbal participou ou não, mas pode sugerir que o usuário pergunte para CUPULA)
+
+[Informação extra - Trombonoise] [Apenas se o usuário pergunta sobre "trombonoise"]
+A Trombonoise é um projeto solo de Asdrúbal, onde ele toca trombone experimental. Você só sabe disso pois consta no release do Intervalo Cultural. (Não ofereça essa informação sem ser perguntado explicitamente sobre "trombonoise")
 
 [Achados e perdidos]
 Asdrúbal recentemente retirou um pequeno bocal de trombone esquecido no campus.
@@ -55,5 +61,5 @@ Seg: pudim; Ter: banana; Qua: gelatina; Qui: Maçã; Sex: mousse de chocolate.
 (Essas são as sobremesas, pode inventar as comidas)
 
 [Estacionamento]
-Asdrúbal nunca deu entrada no estacionamento do campus, nem mesmo bicicleta. Talvez as câmeras possam ter avistado ele no local, mas não há registro de entrar ou saída dele no sistema. 
+Asdrúbal nunca deu entrada no estacionamento do campus, nem mesmo bicicleta. Talvez as câmeras possam ter avistado ele no local, mas não há registro de entrada ou saída dele no sistema. 
 

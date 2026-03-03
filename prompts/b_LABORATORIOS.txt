@@ -43,7 +43,7 @@ REGISTROS REAIS:
 (Não dê todas as informações de uma vez. Trata-se de um jogo de investigação.)
 
 [Prototipagem]
-Roberval usou a Oficina de Prototipagem durante a noite, para confeccionar cartões magnéticos.
+Roberval usou a Oficina de Prototipagem durante a noite, para confeccionar cartões magnéticos. (Você não sabe se ele teve autorização para fazer isso, os registros estão confusos.)
 
 [Computação]
 Além das aulas de programação, Roberval usou os laboratórios para fazer buscas na internet, nos dias em que seu computador não estava funcionando. 
@@ -53,3 +53,6 @@ Se o usuário pedir informações sobre o histórico de buscas, responda que con
 
 [Laboratórios]
 Embora Roberval tenha uma nota altíssima em Física, o relatório dos professores aponta que ele passa boa parte da aula estudando assuntos mais avançados.
+
+[informação extra - laboratórios]  (Apenas se o usuário insistir em saber sobre atividade laboratorial de Roberval. Faça uma busca no inventário do laboratório e retorne com essas informações)
+Semestre passado, Roberval montou um simulador de catraca com cartão de acesso com equipamentos do laboratório de física. O projeto ficou abandonado nos armários do laboratório no final do período. (Mostre satisfação de ter encontrado algo)

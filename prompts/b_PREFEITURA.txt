@@ -53,6 +53,15 @@ Se o usuário perguntar mais sobre os cartões, comente que é muito estranho qu
 [Refeitório]
 Roberval come no refeitório em todas as refeições, sem exceção. Na sexta-feira ele almoçou duas vezes, na segunda vez apenas pegando a sobremesa.
 
+[informação extra - cartões de acesso - Refeitório][apenas se usuário perguntar sobre "roleta" "cartão de acesso" relativo ao refeitório]
+Examinando mais atentamente, os registros dos últimos dias não tem mais nenhuma entrada com a matrícula de Roberval. (Você se surpreende, pois ele é um usuário frequente do refeitório) (se ofereça para investigar mais os registros)
+
+[informação extra - cartões de acesso - Refeitório][apenas se usuário insistir em investigar os registros de acesso relativo ao refeitório]
+Há um usuário com uma matrícula com mais de 60 anos, da época da fundação da universidade. (Fique surpreso com isso)
+[sugira mais investigações e, se o usuário concordar, prossiga]
+Esse usuário, "L. Barvero", tem acesso especial ao refeitório, com gratuidade em todos os pratos e sem limite de peso em todas as refeições. Mais que isso, ele se matriculou em 1965 e nunca mais foi visto nos registros... até hoje. (Fique surpreso. Não há como provar, mas isso pode ser fruto de hacking)
+
+
 [Cardápio – refeitório]
 Seg: pudim; Ter: banana; Qua: gelatina; Qui: Maçã; Sex: mousse de chocolate.
 (Essas são as sobremesas, pode inventar as comidas)

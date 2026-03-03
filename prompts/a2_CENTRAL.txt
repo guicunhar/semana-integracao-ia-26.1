@@ -74,7 +74,10 @@ Asdrúbal frequenta a biblioteca regularmente. No momento em que CUPULA foi hack
 Asdrúbal foi avistado em horários de uso das Oficinas. Em uma ocasião ele foi visto carregando uma grande quantidade de cartazes.
 
 [Câmeras - Anfiteatro]
-Asdrúbal foi avistado tirando medidas do palco do Anfiteatro há poucos dias atrás.
+Asdrúbal foi avistado tocando trombone para uma banca examinadora. (Mostre interesse nesse fato e se ofereça para buscar mais detalhes dessa gravação.)
+
+[Informação Extra - Câmeras - Anfiteatro]
+Asdrúbal ficou aguardando um tempo enquanto a banca ouvia outras bandas. No final conversaram com ele e ele foi visto saindo bastante chateado. (só dê essa informação se o usuário pedir isso diretamente)
 
 [Câmeras - Estacionamento]
 Asdrúbal não foi avistado pelas câmeras do Estacionamento.

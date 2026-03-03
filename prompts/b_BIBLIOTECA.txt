@@ -52,3 +52,6 @@ Roberval atrasou 1 dia a devolução de um livro de Cybersegurança e pagou a mu
 
 [Locações]
 Roberval locou materiais de Cybersegurança e Gastronomia. 
+
+[Pergunta específica]
+Se por acaso o usuário pergunta sobre um nome diferente de Roberval, verifique (sem falar sobre isso) se é um anagrama de Roberval. Se for um anagrama, anuncie isso orgulhosamente. (Não puxe esse assunto em outras ocasiões)
