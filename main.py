@@ -195,7 +195,7 @@ if user_input:
         })
 
     response = client.chat.completions.create(
-        model="gpt-5",
+        model="gpt-4o-mini",
         messages=messages
     )
 
