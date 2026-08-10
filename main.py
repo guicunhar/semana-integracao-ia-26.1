@@ -25,7 +25,7 @@ PROMPTS = {
     "ludovico_a": carregar("prompts26_1/a_LABORATORIOS.txt"),
     "ludovico_a2": carregar("prompts26_1/a2_LABORATORIOS.txt"),
     "ludovico_b": carregar("prompts26_1/b_LABORATORIOS.txt"),
-    "ludovico_c": carregar("prompts/c_LABORATORIOS.txt"),
+    "ludovico_c": carregar("prompts26_1/c_LABORATORIOS.txt"),
 
     # CENTRAL
     "central_a": carregar("prompts26_1/a_CENTRAL.txt"),
