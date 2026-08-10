@@ -10,35 +10,28 @@ def carregar(path):
 PROMPTS = {
 
     # JANUÁRIA
-    "januaria_a": carregar("prompts26_1/a_BIBLIOTECA.txt"),
-    "januaria_a2": carregar("prompts26_1/a2_BIBLIOTECA.txt"),
-    "januaria_b": carregar("prompts26_1/b_BIBLIOTECA.txt"),
-    "januaria_c": carregar("prompts26_1/c_BIBLIOTECA.txt"),
+    "januaria_26_1a": carregar("prompts26_1/a_BIBLIOTECA.txt"),
+    "januaria_26_1a2": carregar("prompts26_1/a2_BIBLIOTECA.txt"),
+    "januaria_26_1b": carregar("prompts26_1/b_BIBLIOTECA.txt"),
+    "januaria_26_1c": carregar("prompts26_1/c_BIBLIOTECA.txt"),
 
     # FORTUNA
-    "fortuna_a": carregar("prompts26_1/a_PREFEITURA.txt"),
-    "fortuna_a2": carregar("prompts26_1/a2_PREFEITURA.txt"),
-    "fortuna_b": carregar("prompts26_1/b_PREFEITURA.txt"),
-    "fortuna_c": carregar("prompts26_1/c_PREFEITURA.txt"),
+    "fortuna_26_1a": carregar("prompts26_1/a_PREFEITURA.txt"),
+    "fortuna_26_1a2": carregar("prompts26_1/a2_PREFEITURA.txt"),
+    "fortuna_26_1b": carregar("prompts26_1/b_PREFEITURA.txt"),
+    "fortuna_26_1c": carregar("prompts26_1/c_PREFEITURA.txt"),
 
     # LUDOVICO
-    "ludovico_a": carregar("prompts26_1/a_LABORATORIOS.txt"),
-    "ludovico_a2": carregar("prompts26_1/a2_LABORATORIOS.txt"),
-    "ludovico_b": carregar("prompts26_1/b_LABORATORIOS.txt"),
-    "ludovico_c": carregar("prompts26_1/c_LABORATORIOS.txt"),
+    "ludovico_26_1a": carregar("prompts26_1/a_LABORATORIOS.txt"),
+    "ludovico_26_1a2": carregar("prompts26_1/a2_LABORATORIOS.txt"),
+    "ludovico_26_1b": carregar("prompts26_1/b_LABORATORIOS.txt"),
+    "ludovico_26_1c": carregar("prompts26_1/c_LABORATORIOS.txt"),
 
     # CENTRAL
-    "central_a": carregar("prompts26_1/a_CENTRAL.txt"),
-    "central_a2": carregar("prompts26_1/a2_CENTRAL.txt"),
-    "central_b": carregar("prompts26_1/b_CENTRAL.txt"),
-    "central_c": carregar("prompts26_1/c_CENTRAL.txt"),
-}
-
-PERSONA = {
-    "a": "Asdrúbal",
-    "a2": "Asdrúbal",
-    "b": "Roberval",
-    "c": "Cíntia"
+    "central_26_1a": carregar("prompts26_1/a_CENTRAL.txt"),
+    "central_26_1a2": carregar("prompts26_1/a2_CENTRAL.txt"),
+    "central_26_1b": carregar("prompts26_1/b_CENTRAL.txt"),
+    "central_26_1c": carregar("prompts26_1/c_CENTRAL.txt"),
 }
 
 MENSAGENS_INICIAIS = {
@@ -47,7 +40,7 @@ MENSAGENS_INICIAIS = {
     "ludovico": "🧪 Olá! Ludovico, Assistente das Oficinas e Laboratórios falando. Precisa de algo?.",
 }
 
-CENTRAIS = ["central_a", "central_a2", "central_b", "central_c"]
+CENTRAIS = ["central_26_1a", "central_26_1a2", "central_26_1b", "central_26_1c", "central_26_2a", "central_26_2b", "central_26_2c","central_26_3d", "central_26_3e", "central_26_3f"]
 
 # -------------------------------
 # DETECTAR ROTA
@@ -115,27 +108,7 @@ if rota not in st.session_state.memoria:
         nome_persona = PERSONA.get(versao, "Desconhecido")
 
         mensagem_central = f"""
-Obrigado por me desbloquear.
-
-Detectamos uma invasão, descobrimos que o responsável se chama {nome_persona}.
-
-Precisamos da sua ajuda.
-
-Sua missão é descobrir toda a rotina dele na semana passada.
-
-Para isso, você deverá conversar com as diferentes IAs do sistema. Cada uma possui fragmentos de informação.
-
-Somente reunindo essas peças será possível entender:
-
-➡️ Onde ele esteve?
-➡️ O que fez?
-➡️ E principalmente… por que ele decidiu me hackear.
-
-Investigue. Conecte as informações. Descubra a verdade.
-
-Preencha a grade no papel em que foi entregue a vocês.
-
-Ah, eu sei muito bem como lidar melhor com as outras IAs. Então, se precisar de algo, é só me pedir.
+        MENSAGEM DA CUPULA!!!!!!!!!!
 """
 
         st.session_state.memoria[rota] = [
