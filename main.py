@@ -14,24 +14,48 @@ PROMPTS = {
     "januaria_26_1a2": carregar("prompts26_1/a2_BIBLIOTECA.txt"),
     "januaria_26_1b": carregar("prompts26_1/b_BIBLIOTECA.txt"),
     "januaria_26_1c": carregar("prompts26_1/c_BIBLIOTECA.txt"),
+    "januaria_26_2a": carregar("prompts26_2/a_BIBLIOTECA.txt"),
+    "januaria_26_2b": carregar("prompts26_2/b_BIBLIOTECA.txt"),
+    "januaria_26_2c": carregar("prompts26_2/c_BIBLIOTECA.txt"),
+    "januaria_26_2d": carregar("prompts26_2/d_BIBLIOTECA.txt"),
+    "januaria_26_2e": carregar("prompts26_2/e_BIBLIOTECA.txt"),
+    "januaria_26_2f": carregar("prompts26_2/f_BIBLIOTECA.txt"),
 
     # FORTUNA
     "fortuna_26_1a": carregar("prompts26_1/a_PREFEITURA.txt"),
     "fortuna_26_1a2": carregar("prompts26_1/a2_PREFEITURA.txt"),
     "fortuna_26_1b": carregar("prompts26_1/b_PREFEITURA.txt"),
     "fortuna_26_1c": carregar("prompts26_1/c_PREFEITURA.txt"),
+    "fortuna_26_2a": carregar("prompts26_2/a_PREFEITURA.txt"),
+    "fortuna_26_2b": carregar("prompts26_2/b_PREFEITURA.txt"),
+    "fortuna_26_2c": carregar("prompts26_2/c_PREFEITURA.txt"),
+    "fortuna_26_2d": carregar("prompts26_2/d_PREFEITURA.txt"),
+    "fortuna_26_2e": carregar("prompts26_2/e_PREFEITURA.txt"),
+    "fortuna_26_2f": carregar("prompts26_2/f_PREFEITURA.txt"),
 
     # LUDOVICO
     "ludovico_26_1a": carregar("prompts26_1/a_LABORATORIOS.txt"),
     "ludovico_26_1a2": carregar("prompts26_1/a2_LABORATORIOS.txt"),
     "ludovico_26_1b": carregar("prompts26_1/b_LABORATORIOS.txt"),
     "ludovico_26_1c": carregar("prompts26_1/c_LABORATORIOS.txt"),
+    "ludovico_26_2a": carregar("prompts26_2/a_LABORATORIOS.txt"),
+    "ludovico_26_2b": carregar("prompts26_2/b_LABORATORIOS.txt"),
+    "ludovico_26_2c": carregar("prompts26_2/c_LABORATORIOS.txt"),
+    "ludovico_26_2d": carregar("prompts26_2/d_LABORATORIOS.txt"),
+    "ludovico_26_2e": carregar("prompts26_2/e_LABORATORIOS.txt"),
+    "ludovico_26_2f": carregar("prompts26_2/f_LABORATORIOS.txt"),
 
     # CENTRAL
     "central_26_1a": carregar("prompts26_1/a_CENTRAL.txt"),
     "central_26_1a2": carregar("prompts26_1/a2_CENTRAL.txt"),
     "central_26_1b": carregar("prompts26_1/b_CENTRAL.txt"),
     "central_26_1c": carregar("prompts26_1/c_CENTRAL.txt"),
+    "central_26_2a": carregar("prompts26_2/a_CENTRAL.txt"),
+    "central_26_2b": carregar("prompts26_2/b_CENTRAL.txt"),
+    "central_26_2c": carregar("prompts26_2/c_CENTRAL.txt"),
+    "central_26_2d": carregar("prompts26_2/d_CENTRAL.txt"),
+    "central_26_2e": carregar("prompts26_2/e_CENTRAL.txt"),
+    "central_26_2f": carregar("prompts26_2/f_CENTRAL.txt"),
 }
 
 MENSAGENS_INICIAIS = {
@@ -40,7 +64,10 @@ MENSAGENS_INICIAIS = {
     "ludovico": "🧪 Olá! Ludovico, Assistente das Oficinas e Laboratórios falando. Precisa de algo?.",
 }
 
-CENTRAIS = ["central_26_1a", "central_26_1a2", "central_26_1b", "central_26_1c", "central_26_2a", "central_26_2b", "central_26_2c","central_26_3d", "central_26_3e", "central_26_3f"]
+CENTRAIS = [
+    "central_26_1a", "central_26_1a2", "central_26_1b", "central_26_1c",
+    "central_26_2a", "central_26_2b", "central_26_2c", "central_26_2d", "central_26_2e", "central_26_2f",
+]
 
 # -------------------------------
 # DETECTAR ROTA
@@ -50,7 +77,7 @@ query = st.query_params
 rota = query.get("agente", "").lower()
 
 try:
-    personagem, versao = rota.split("_")
+    personagem, versao = rota.split("_", 1)
 except:
     st.error("Rota inválida.")
     st.stop()
@@ -104,8 +131,6 @@ if "memoria" not in st.session_state:
 if rota not in st.session_state.memoria:
 
     if personagem == "central":
-
-        nome_persona = PERSONA.get(versao, "Desconhecido")
 
         mensagem_central = f"""
         MENSAGEM DA CUPULA!!!!!!!!!!
