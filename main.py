@@ -10,28 +10,28 @@ def carregar(path):
 PROMPTS = {
 
     # JANUÁRIA
-    "januaria_a": carregar("prompts/a_BIBLIOTECA.txt"),
-    "januaria_a2": carregar("prompts/a2_BIBLIOTECA.txt"),
-    "januaria_b": carregar("prompts/b_BIBLIOTECA.txt"),
-    "januaria_c": carregar("prompts/c_BIBLIOTECA.txt"),
+    "januaria_a": carregar("prompts26_1/a_BIBLIOTECA.txt"),
+    "januaria_a2": carregar("prompts26_1/a2_BIBLIOTECA.txt"),
+    "januaria_b": carregar("prompts26_1/b_BIBLIOTECA.txt"),
+    "januaria_c": carregar("prompts26_1/c_BIBLIOTECA.txt"),
 
     # FORTUNA
-    "fortuna_a": carregar("prompts/a_PREFEITURA.txt"),
-    "fortuna_a2": carregar("prompts/a2_PREFEITURA.txt"),
-    "fortuna_b": carregar("prompts/b_PREFEITURA.txt"),
-    "fortuna_c": carregar("prompts/c_PREFEITURA.txt"),
+    "fortuna_a": carregar("prompts26_1/a_PREFEITURA.txt"),
+    "fortuna_a2": carregar("prompts26_1/a2_PREFEITURA.txt"),
+    "fortuna_b": carregar("prompts26_1/b_PREFEITURA.txt"),
+    "fortuna_c": carregar("prompts26_1/c_PREFEITURA.txt"),
 
     # LUDOVICO
-    "ludovico_a": carregar("prompts/a_LABORATORIOS.txt"),
-    "ludovico_a2": carregar("prompts/a2_LABORATORIOS.txt"),
-    "ludovico_b": carregar("prompts/b_LABORATORIOS.txt"),
+    "ludovico_a": carregar("prompts26_1/a_LABORATORIOS.txt"),
+    "ludovico_a2": carregar("prompts26_1/a2_LABORATORIOS.txt"),
+    "ludovico_b": carregar("prompts26_1/b_LABORATORIOS.txt"),
     "ludovico_c": carregar("prompts/c_LABORATORIOS.txt"),
 
     # CENTRAL
-    "central_a": carregar("prompts/a_CENTRAL.txt"),
-    "central_a2": carregar("prompts/a2_CENTRAL.txt"),
-    "central_b": carregar("prompts/b_CENTRAL.txt"),
-    "central_c": carregar("prompts/c_CENTRAL.txt"),
+    "central_a": carregar("prompts26_1/a_CENTRAL.txt"),
+    "central_a2": carregar("prompts26_1/a2_CENTRAL.txt"),
+    "central_b": carregar("prompts26_1/b_CENTRAL.txt"),
+    "central_c": carregar("prompts26_1/c_CENTRAL.txt"),
 }
 
 PERSONA = {
