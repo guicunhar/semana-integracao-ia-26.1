@@ -59,10 +59,10 @@ PROMPTS = {
 }
 
 PERSONA = {
-    "a": "Asdrúbal",
-    "a2": "Asdrúbal",
-    "b": "Roberval",
-    "c": "Cíntia"
+    "1a": "Asdrúbal",
+    "1a2": "Asdrúbal",
+    "1b": "Roberval",
+    "1c": "Cíntia"
 }
 
 MENSAGENS_INICIAIS = {
