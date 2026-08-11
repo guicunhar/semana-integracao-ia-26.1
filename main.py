@@ -58,6 +58,13 @@ PROMPTS = {
     "central_26_2f": carregar("prompts26_2/f_CENTRAL.txt"),
 }
 
+PERSONA = {
+    "a": "Asdrúbal",
+    "a2": "Asdrúbal",
+    "b": "Roberval",
+    "c": "Cíntia"
+}
+
 MENSAGENS_INICIAIS = {
     "januaria": "📚 Olá! Sou a assistente da Biblioteca, a Januária. Sou sua ajuda diária!",
     "fortuna": "🏛️ Olá! Aqui é a Fortuna, a Prefeitura. Como posso te orientar?",
@@ -129,11 +136,33 @@ if "memoria" not in st.session_state:
     st.session_state.memoria = {}
 
 if rota not in st.session_state.memoria:
-
     if personagem == "central":
 
+        codigo_persona = versao.split("_")[-1]
+        nome_persona = PERSONA.get(codigo_persona, "Desconhecido")
+
         mensagem_central = f"""
-        MENSAGEM DA CUPULA!!!!!!!!!!
+Obrigado por me desbloquear.
+
+Detectamos uma invasão, descobrimos que o responsável se chama {nome_persona}.
+
+Precisamos da sua ajuda.
+
+Sua missão é descobrir toda a rotina dele na semana passada.
+
+Para isso, você deverá conversar com as diferentes IAs do sistema. Cada uma possui fragmentos de informação.
+
+Somente reunindo essas peças será possível entender:
+
+➡️ Onde ele esteve?
+➡️ O que fez?
+➡️ E principalmente… por que ele decidiu me hackear.
+
+Investigue. Conecte as informações. Descubra a verdade.
+
+Preencha a grade no papel em que foi entregue a vocês.
+
+Ah, eu sei muito bem como lidar melhor com as outras IAs. Então, se precisar de algo, é só me pedir.
 """
 
         st.session_state.memoria[rota] = [
